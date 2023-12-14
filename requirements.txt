@@ -2,5 +2,5 @@ langchain==0.0.350
 pandas==1.5.3
 streamlit==1.12.0
 openai
-chromadb
+chromadb==0.3.29
 tiktoken
