@@ -1,0 +1,76 @@
+﻿field;section;mesure;unit;abbreviation
+BIOCHEMISTRY;Electrolytes and renal function;Sodium;mmol/l;
+BIOCHEMISTRY;Electrolytes and renal function;Potassium;mmol/l;
+BIOCHEMISTRY;Electrolytes and renal function;Chloride;mmol/l;
+BIOCHEMISTRY;Electrolytes and renal function;Bicarbonate;mmol/l;
+BIOCHEMISTRY;Electrolytes and renal function;Urea;mmol/l;
+BIOCHEMISTRY;Electrolytes and renal function;Creatinine;µmol/l;
+BIOCHEMISTRY;Electrolytes and renal function;Urate;mmol/l ;
+BIOCHEMISTRY;Electrolytes and renal function;eGFR;ml/min/1.73m²;
+BIOCHEMISTRY;Electrolytes and renal function;Osmolality;mOsm/kg;
+BIOCHEMISTRY;Electrolytes and renal function;"Creatinine Clearance 
+(24 hour urine and blood)";ml/min/1.73 m²;
+BIOCHEMISTRY;Electrolytes and renal function;"Urine protein 
+(24 hour urine)";mg/24 h;
+BIOCHEMISTRY;Diagnosis of Chronic Kidney Disease (CKD);GFR;ml/min/1.73 m²;Glomerular filtration rate 
+BIOCHEMISTRY;Diagnosis of Chronic Kidney Disease (CKD);G1;ml/min/1.73 m²;GFR category
+BIOCHEMISTRY;Diagnosis of Chronic Kidney Disease (CKD);G2;ml/min/1.73 m²;GFR category
+BIOCHEMISTRY;Diagnosis of Chronic Kidney Disease (CKD);G3a;ml/min/1.73 m²;GFR category
+BIOCHEMISTRY;Diagnosis of Chronic Kidney Disease (CKD);G3b;ml/min/1.73 m²;GFR category
+BIOCHEMISTRY;Diagnosis of Chronic Kidney Disease (CKD);G4;ml/min/1.73 m²;GFR category
+BIOCHEMISTRY;Diagnosis of Chronic Kidney Disease (CKD);G5;ml/min/1.73 m²;GFR category
+BIOCHEMISTRY;Diagnosis of Chronic Kidney Disease (CKD);ACR;mg/mmol;Albumin-to-creatinine ratio
+BIOCHEMISTRY;Diagnosis of Chronic Kidney Disease (CKD);AER;mg/24h;Albumin excretion rate
+BIOCHEMISTRY;Diagnosis of Chronic Kidney Disease (CKD);PCR;mg/mmol;Protein-to-creatinine ratio
+BIOCHEMISTRY;Diagnosis of Chronic Kidney Disease (CKD);PER;mg/24h;Protein excretion rate
+BIOCHEMISTRY;Calcium, magnesium, phosphate, vitamin D and PTH;Calcium;mmol/l;
+BIOCHEMISTRY;Calcium, magnesium, phosphate, vitamin D and PTH;Magnesium;mmol/l;
+BIOCHEMISTRY;Calcium, magnesium, phosphate, vitamin D and PTH;Phosphate;mmol/l;
+BIOCHEMISTRY;Calcium, magnesium, phosphate, vitamin D and PTH;25(OH) Vitamin D;ng/ml;
+BIOCHEMISTRY;Calcium, magnesium, phosphate, vitamin D and PTH;Parathyroid hormone;pmol/l;
+BIOCHEMISTRY;Liver function tests;Total protein;g/l;
+BIOCHEMISTRY;Liver function tests;Albumin;g/l;
+BIOCHEMISTRY;Liver function tests;Prealbumin (Transthyretin);mg/l;
+BIOCHEMISTRY;Liver function tests;Serum Cholinesterase;U/l;
+BIOCHEMISTRY;Liver function tests;Ammonia;µmol/l;
+BIOCHEMISTRY;Liver function tests;Total Bilirubin;µmol/l;
+BIOCHEMISTRY;Liver function tests;Conjugated Bilirubin;µmol/l;
+BIOCHEMISTRY;Liver function tests;Unconjugated Bilirubin;µmol/l;
+BIOCHEMISTRY;Liver function tests;Alkaline Phosphatase (ALP);U/l;
+BIOCHEMISTRY;Liver function tests;Gamma Glutamyltransferase (GGT);U/l;
+BIOCHEMISTRY;Liver function tests;Alanine aminotransferase (ALT);U/l;
+BIOCHEMISTRY;Liver function tests;Aspartate amino-transferase (AST);U/l;
+BIOCHEMISTRY;Liver function tests;Lactate dehydro-genase (LD);U/l;
+BIOCHEMISTRY;Pancreas;Amylase;U/l;
+BIOCHEMISTRY;Pancreas;Lipase;U/l;
+BIOCHEMISTRY;Pancreas;Stool elastase;µg/g stool;
+BIOCHEMISTRY;Inflammatory markers;CRP;mg/l;C-Reactive Protein)
+BIOCHEMISTRY;Inflammatory markers;Procalcitonin (PCT);ng/ml;
+BIOCHEMISTRY;Cardiac and skeletal muscle markers;CK (Creatine kinase);U/l;
+BIOCHEMISTRY;Cardiac and skeletal muscle markers;CK-MB (mass) ;ng/ml;
+BIOCHEMISTRY;Cardiac and skeletal muscle markers;Troponin I;ng/l;
+BIOCHEMISTRY;Cardiac and skeletal muscle markers;Troponin T ;ng/l;
+BIOCHEMISTRY;Cardiac and skeletal muscle markers;Myoglobin;µg/l;
+BIOCHEMISTRY;Cardiac and skeletal muscle markers;Homocysteine;µmol/l;
+BIOCHEMISTRY;Cardiac and skeletal muscle markers;NT-ProBNP;pg/ml;
+BIOCHEMISTRY;Carbohydrate metabolism;Glucose fasting;mmol/l;
+BIOCHEMISTRY;Carbohydrate metabolism;Insulin fasting;µIU/ml;
+BIOCHEMISTRY;Carbohydrate metabolism;HbA1c;%;
+BIOCHEMISTRY;Carbohydrate metabolism;Fructosamine;µmol/l;
+BIOCHEMISTRY;Carbohydrate metabolism;Plasma glucose;mmol/l;
+BIOCHEMISTRY;Carbohydrate metabolism;Quick index;_;
+BIOCHEMISTRY;Lipid metabolism;HDL – cholesterol;mmol/l;
+BIOCHEMISTRY;Lipid metabolism;Total cholesterol ;mmol/l;
+BIOCHEMISTRY;Lipid metabolism;Non-HDL cholesterol;mmol/l;
+BIOCHEMISTRY;Lipid metabolism;Systolic BP – untreated ;mmHg;
+BIOCHEMISTRY;Lipid metabolism;Systolic BP – on antihypertensive treatment;mmHg;
+BIOCHEMISTRY;Lipid metabolism;Lipoprotein (a);nmol/l ;
+BIOCHEMISTRY;Lipid metabolism;Apolipoprotein A-I;g/l;
+BIOCHEMISTRY;Lipid metabolism;Apolipoprotein B ;g/l;
+BIOCHEMISTRY;Iron studies;Iron;µmol/l;
+BIOCHEMISTRY;Iron studies;Transferrin;g/l;
+BIOCHEMISTRY;Iron studies;Percentage transferrin saturation;%;
+BIOCHEMISTRY;Iron studies;Ferritin;ng/ml;
+BIOCHEMISTRY;Folate and vitamin B12;Serum Folate;nmol/l;
+BIOCHEMISTRY;Folate and vitamin B13;Red blood cell folate;nmol/l;
+BIOCHEMISTRY;Folate and vitamin B14;Vitamin B12;pmol/l;

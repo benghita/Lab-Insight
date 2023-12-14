@@ -1,0 +1,663 @@
+Guide to laboratory tests  |  96
+HAEMATOLOGY
+Full blood count (FBC)
+Analyte Ref. Range Units Interpretation
+Haemoglobin Inland:
+Sea level:M  14.3 − 18.3M  13.0 − 17.0g/dl ↑: Polycythaemia .
+↓: Anaemia (bleeding, nutritional deficiencies, 
+malabsorption, chronic illness, haemolysis and bone marrow failure (inherited or acquired).Inland:Sea level:F   12.1 − 16.3
+F   12.0 − 15.0g/dl
+Red cell count Inland:
+Sea level:M  4.89 − 6.11M  4.50 − 5.5010
+12/l↑: Polycythaemia, thalassaemia .
+↓: Anaemia .
+Inland:
+Sea level:F   4.13 − 5.67
+F   3.80 − 4.801012/l
+Haematocrit Inland:Sea level:M  43.0 − 55.0 M  40.0 − 50.0% ↑: Polycythaemia .
+↓: Anaemia .
+Inland:Sea level:F   37.0 − 49.0 
+F   36.0 − 46.0%
+MCV  
+(mean 
+corpuscular 
+volume)79.1 – 98.9 fl↑: Macrocytic red cells .
+Check peripheral blood smear for round or oval macrocytes . 
+Oval macrocytes are associated with  megaloblastic anaemia  
+(e.g. vit B12 / folate deficiency).  
+Round macrocytes are associated with liver disease, hypothyroidism, antiretroviral therapy, alcohol, chemotherapy, reticulocytosis and myelodysplasia .97  |  Ampath Desk Reference
+Analyte Ref. Range Units Interpretation
+↓: Microcytic red cells 
+Iron deficiency, thalassaemia, other 
+haemoglobin defects,  anaemia of chronic 
+disease, lead poisoning, sideroblastic 
+anaemia .
+MCH (mean corpuscular 
+haemoglobin)27.0 – 32.0 pg ↑: Hyperchromatic red cells e .g. spherocytes .
+↓: Hypochromic (pale) red cells  
+(Causes as for microcytic cells).
+MCHC (mean 
+corpuscular haemoglobin concentration)31 – 37 g/dl ↑: Spherocytes, bilirubinaemia, auto-
+agglutination, lipaemic sample .
+Red cell distribution width (RDW)M 10 – 16.3
+F  10 – 17.3% If raised it means there are red cells of different sizes . 
+Often the earliest sign of a nutritional deficiency .Guide to laboratory tests  |  98
+Analyte Ref. Range Units Interpretation
+Platelet count 150 – 450 109/l↑: Thrombocytosis
+Reactive causes should firstly be excluded 
+e.g. iron deficiency, trauma, infection, and 
+malignancy . If no reason is found and platelets 
+remain increased, a chronic myeloproliferative disorder should be excluded .  Platelet 
+anisocytosis will be important to evaluate .
+↓: Thrombocytopenia
+Production defect
+ – bone marrow infiltration or 
+failure  
+Peripheral loss mechanism e .g. peripheral 
+destruction (ITP)  
+Pooling / sequestration (hypersplenism) or usage ( e.g. DIC,TTP).
+White cell count 3.92 – 9.88 10
+9/l If abnormal, evaluate the differential white cell count .99  |  Ampath Desk Reference
+Analyte Ref. Range Units Interpretation
+Lymphocytes 1.0 – 4.0 109/l↑: Lymphocytosis
+Primary causes:  Lymphoproliferative disorders 
+e.g. CLL, lymphoma overspill into the blood 
+Reactive causes e .g. viral infections, Bordetella 
+pertussis, stress lymphocytosis (e .g. myocardial 
+infarction, surgery, trauma), smoking, post splenectomy and autoimmune disorders .
+↓: Lymphopenia
+Inherited:  congenital immunodeficiencies . 
+Acquired: e .g. viral infections, TB, lymphoma, 
+aplastic anaemia, immunosuppressive therapy, radiation, renal failure, autoimmune diseases and negative acute-phase response .
+Neutrophils 2.0 – 7.5 10
+9/l↑: Neutrophil leucocytosis
+Bacterial infection, inflammation, trauma / surgery, neoplasia, haemorrhage, haemolysis, pregnancy, metabolic e .g. diabetic 
+ketoacidosis, drugs e .g. steroids, growth factor 
+therapy e .g. G-CSF .
+↓: Neutropenia
+Decreased production:
+• General bone marrow failure e .g. aplastic 
+anaemia, acute leukaemia .
+• Specific failure of neutrophil production e .g. 
+congenital, cyclical, drug inducedGuide to laboratory tests  |  100
+Analyte Ref. Range Units Interpretation
+Peripheral loss:
+e.g. hypersplenism, autoimmune destruction, 
+severe infection .
+Monocytes 0.18 – 1.00 109/l↑: Monocytosis  
+Infections e .g. TB, CMV, subacute bacterial 
+endocarditis, syphilis  
+Inflammatory and immune disorders e .g. SLE, 
+RA,ulcerative colitis, sarcoidosis . 
+Haematological malignancies e .g. CMML, 
+AML. 
+Non-haematological malignancies . 
+Chronic neutropenias .
+↓: Monocytopenia  
+Haematological disorders e .g. Aplasia, hairy 
+cell leukaemia, autoimmune e .g. RA, SLE, HIV .
+Eosinophils 0.0	−	0.45 109/l↑: Eosinophilia  
+Allergy e .g. asthma, parasites, skin disease, 
+drug sensitivity, connective tissue disease, Hodgkin lymphoma, chronic myeloproliferative disorders, hypereosinophilic syndrome .
+Basophils 0.0	−	0.2 10
+9/l Usually increased in chronic myeloproliferative disorders e .g. chronic myeloid leukaemia .101  |  Ampath Desk Reference
+ESR (erythrocyte sedimentation rate)
+It measures the rate of fall of a column of red cells in plasma during one hour .
+Largely determined by the concentration of plasma proteins e .g. fibrinogen, other acute-phase 
+proteins and immunoglobulins .
+Raised ESR is a non-specific indicator of an acute-phase response and is of value in monitoring 
+disease activity e .g. rheumatoid arthritis .
+Normal value: Male 1 – 15 mm / hour and female 1 – 20 mm / hour  
+(Wintrobe or Westergren method).
+Causes of an elevated ESR include:
+• Inflammatory disorders e .g. rheumatoid arthritis, temporal arthritis, polymyalgia rheumatica, SLE .
+• Infections e .g. TB, HIV .
+• Malignancy .
+• Myeloma .
+• Anaemia .
+• Pregnancy .
+Causes of a decreased ESR:
+• Polycythaemia .
+• Hypofibrinogenaemia .
+• Congestive heart failure . 
+• Spherocytosis . 
+• Sickle cells . Guide to laboratory tests  |  102
+Investigation of a bleeding disorder
+Clinical evaluation is important prior to requesting lab tests . Five important questions should be 
+asked, if all negative, no tests may be required . The questions are: 
+• Is it real? Did the patient bleed with previous surgery, tooth extraction, during menstruation, 
+circumcision, child birth, etc; keeping in mind that this may be a new cause of bleeding tendency .
+• Is it a primary or secondary haemostatic dysfunction, with epistaxis, petechiae, mucosal bleeding indicating a primary (platelet / endothelial  type) defect and muscle / joint bleeds pointing to a secondary (clotting factor defect).
+• Is there a family history? Often this helps in requesting the correct tests .
+• Does the patient have any systemic disorder that influences haemostatic function, e .g. 
+haematological, renal or hepatic disorders .
+• Which medication, including over-the-counter drugs is the patient taking that may be the cause of bleeding?
+Start with the basic coagulation screen (PT, APTT, fibrinogen, thrombin time, platelet count and bleeding time). See table for interpretation of results .  Normal screening values may be found with 
+minor factor deficiencies and factor levels may then rather be done .103  |  Ampath Desk Reference
+Basic coagulation screen
+Analyte What is tested Ref. Range Units Interpretation
+Prothrombin 
+time (PT)Efficiency of the extrinsic clotting 
+pathway .  9.0 – 11.2 seconds
+Prolonged :
+Warfarin therapy
+Rivaroxaban (Xeralto) therapy (neoplastin)Liver disease .
+Vit K deficiency . 
+DIC.
+Clotting factor deficiency or defect(I, II, V, VII, X).
+Activated partial thromboplastin time (APTT)Efficiency of the intrinsic clotting pathway .22.0 – 30.7 seconds
+Prolonged:Heparin therapy (esp . unfractionated) or 
+heparin contamination .
+Dabigatran (Pradaxa) therapyDIC.
+Liver disease .
+Massive transfusion .
+Lupus anticoagulant .
+Clotting factor defects (other than FVII).Also moderately prolonged in patients on warfarin and in vit K deficiency .Guide to laboratory tests  |  104
+Analyte What is tested Ref. Range Units Interpretation
+Thrombin time 
+(TT)Fibrinogen to fibrin stage .14.0	−	21.0	 seconds
+Prolonged:Very sensitive to unfractionated heparin (LMWH can slightly prolong it at therapeutic levels).Dabigatran (Pradaxa) therapy Hypofibrinogenaemia – as with DIC or congenital defect / deficiency .
+Dysfibrinogenaemia – inherited or acquired (in liver disease) or physiologically in neonates .
+Raised concentrations of FDP as with DIC or liver disease .
+Hypoalbuminaemia .
+Grossly elevated fibrinogen .
+Fibrinogen Plasma level . 1.8 – 3.5 g/l ↑: Acute-phase .
+↓: DIC, liver disease, fibrinogen deficiency or 
+dysfibrinogenaemia .
+Platelet count Number of platelets in the blood .150	−	450 10
+9/l ↓: Production defect – bone marrow
+infiltration / failure .
+Peripheral loss mechanism e .g. immune 
+(ITP), hypersplenism, DIC, TTP , etc .105  |  Ampath Desk Reference
+Analyte What is tested Ref. Range Units Interpretation
+Bleeding 
+time  
+(Ivy method)Platelet function and 
+capillary integrity .
+Time measured for bleeding to stop after an incision is made on the forearm of the 
+patient in standardised 
+manner .
+NB: platelet count 
+should be normal .3	−	9 minutes
+Increased:Platelet dysfunction:• Acquired e .g. aspirin, plavix, uraemia, 
+myeloproliferative neoplasms, myelodysplasia and  the presence of a paraprotein . 
+• Congenital e .g. Von Willebrand’s 
+disease, storage pool defect, Bernard-Soulier syndrome etc .
+Vascular disorders e .g. Ehlers-Danlos’s 
+syndrome .
+Important: a normal bleeding time does not imply normal haemostasis and it does not correlate well with bleeding at other sites or with intra-operative bleeding . Guide to laboratory tests  |  106
+Interpretation of basic coagulation screen
+PT APTT TT FibrinogenPlatelet 
+countConditions
+Prolonged Normal Normal Normal Normal Factor VII deficiency .
+Early oral anticoagulation .
+Mild factor II, V or X deficiency .
+Lupus anticoagulant with some 
+reagents .
+Normal Prolonged Normal Normal Normal Factor VIII, IX, XI, XII, prekallikrein, HMWK deficiency / defect .
+Von Willebrand’s disease .
+Lupus anticoagulant .
+Mild II, V or X deficiency .
+Unfractionated heparin
+Prolonged Prolonged Normal Normal Normal Vit K deficiency .
+Warfarin therapy .
+Factor II, V or X  deficiency .
+Multiple factor deficiency e .g. liver 
+failure .
+Combined V & VIII deficiency .
+Prolonged Prolonged Prolonged Normal or lowNormal Heparin in large amount .
+Liver disease .
+Fibrinogen deficiency / disorder .
+Hyperfibrinolysis .
+Inhibition of fibrin polymerization .107  |  Ampath Desk Reference
+PT APTT TT FibrinogenPlatelet 
+countConditions
+Prolonged Prolonged Prolonged Low Low DIC.
+Acute liver disease .
+Prolonged Prolonged Normal Normal or 
+lowLow Massive transfusion .
+Liver disease .
+Normal Normal Normal Normal Low Thrombocytopenia .
+Consider causes for thrombocytopenia .
+Normal Normal Normal Normal Normal Platelet dysfunction .
+Factor XIII deficiency .
+Mild Von Willebrand’s disease .
+Vascular disorder .
+Disorder of fibrinolysis .
+Mild or masked coagulation factor deficiency .
+Normal haemostasis .
+Reference: Dacie and Lewis: Practical Haematology
+• If PT, APTT, thrombin time, fibrinogen and platelet count are normal and the patient has a significant 
+bleeding history, further investigation is needed to exclude a platelet function disorder and other rarer disorders e .g. fibrinolytic defects (tPa, PAI, antiplasmin), Von Willebrand disease and FXIII deficiency . Guide to laboratory tests  |  108
+Laboratory assessment for Von Willebrand disease (VWD)
+Initial tests:
+• Von Willebrand antigen (VWF: Ag)
+• Von Willebrand activity  (Ristocetin cofactor activity) 
+• Factor VIII 
+Additional tests :
+• Von Willebrand multimeric analysis if antigen and / or activity is decreased .
+• Platelet aggregation study with ristocetin (RIPA).
+• VWF collagen-binding assay .
+Based on the results of these tests, the diagnosis can be made of:• Type 1 Von Willebrand disease (mild quantitative defect).
+• Type 2 Von Willebrand disease (subclassified as type 2A, 2B, 2M or 2N) (qualitative / functional defect).  
+• Type 3 Von Willebrand disease (severe quantitative defect).
+NB: Testing for Von Willebrand disease should be done in the absence of any acute-phase responses 
+(VWF is an acute-phase protein).
+Systemic inflammation, infection, pregnancy, oestrogen / oral contraceptives, stress e .g. surgery can 
+cause an increase in levels of VWF and mask lower baseline levels .
+Individuals with bloodgroup O have plasma VWF levels that are 25 – 30% lower than those with 
+bloodgroup A, B or AB .  In patients with borderline results, it is often helpful to repeat the diagnostic 
+test on two or 3 occasions and to study available family members .109  |  Ampath Desk Reference
+Platelet aggregation studies
+Platelet aggregation responses to different agonists are measured .  
+It detects congenital and acquired abnormalities of platelet function .
+Agonist Ref. Range Units Interpretation/causes
+ADP (10 µM/ml) 50	−	100	 % ↓: Drugs e .g. clopidogrel and aspirin; storage pool 
+defect .
+Collagen (10 µg/ml) 50	−	100	 % ↓: Storage pool defect; aspirin; cyclo-oxygenase 
+and thromboxane synthetase deficiency .
+Arachidonic acid (1.5 mM/ml) 50	−	100	 %↓: Aspirin; storage pool defect; cyclo-oxygenase 
+and thromboxane synthetase deficiency .
+Ristocetin high concentration 
+(1.25 mg/ml)50	−	100	 % ↓: Bernard-Soulier syndrome – confirm with flow 
+cytometry for Gp Ib 
+Von Willebrand disease .
+Ristocetin low concentration (0.5 mg/ml)<10 % ↑: Von Willebrand disease type 2 b (functional 
+defect).
+If ↓ with ADP , Collagen and Arachidonic acid; and often primary wave only with RistocetinGlanzman thrombasthenia .
+Confirm with flow cytometry for Gp IIbIIIa
+PFA-200 (for evaluating platelet function) 
+(Special acknowledgement – Dr Rita Govender; Pathchat Edition no . 23)
+This test may be seen as a cross between bleeding time and quick aggregation testing . 
+Availability: 
+Testing on the PFA 200 requires a sample <4 hours old . 
+Request for the test must take into account the sample's transit time to the laboratory that hosts the 
+instrument . Guide to laboratory tests  |  110
+Principle : 
+• Citrated whole blood is aspirated at high shear rates through disposable cartridges .
+• The cartridge contains an aperture within a membrane coated with either collagen and epinephrine 
+(Col / EPI) or collagen and ADP (Col / ADP).  
+• The agonists induce platelet adhesion, activation and aggregation, resulting in occlusion of the 
+aperture and hence cessation of blood flow . Parameter is reported as closure time . 
+Variables affecting results : 
+• Test must be performed within 4 hours of blood collection . 
+• HCT <35% and platelet count <150 may affect closure times . 
+• Samples with HCT >50% and platelet count >500 have not been evaluated . 
+• Fatty acids, lipaemia . 
+• Haemolysis of sample . 
+Advantages:
+• Small volume of citrated venous blood (therefore suitable for paediatric samples as well) 
+• Insensitive to clotting factor deficiency (not dependent on plasma fibrinogen of fibrin generation) 
+• Better standardisation 
+• No influence on result from oedema, loss of connective tissue, presence of fragile vessels (as in 
+bleeding time performed in elderly patients) 
+Interpretation:
+Normal AspirinVon Willebrand DiseaseGlanzmann thrombasthenia
+Col / EPI Normal	(82	−	150	s) Prolonged Prolonged Prolonged
+Col / ADP Normal	(62	−	100	s) Normal Prolonged Prolonged111  |  Ampath Desk Reference
+In the event of abnormal results, further testing is indicated, especially if history supports a bleeding 
+diathesis .  
+Consultation with a clinical haematologist or haematopathologist is strongly recommended . 
+Please keep in mind: The test may be normal despite abnormal platelet function e .g. in: 
+• Storage Pool Disease 
+• Primary secretion defects 
+• Mild VWDx 
+The need for further testing must be guided by history and clinical features supportive of platelet disorder . 
+References:Bain, B .J., Bates, I ., Laffan, M .A. & Lewis, S .M. 2012. 
+Dacie and Lewis Practical Haematology, 11th edition, Churchill Livingstone . 
+British Committee for Standards in Haematology . 2011.
+Postgraduate haematology: guidelines for laboratory investigation of inheritable platelet disorders Aug 2011 
+Thromboelastogram (TEG)
+What is tested:
+The rate of clot formation, the kinetics of clot formation, the strength and stability of the clot . 
+Indication: Investigation of patients with abnormal bleeding during and after surgery . It can guide in the specific 
+treatment needed . It is also requested by some physicians as part of pre-operative work-up .  Its 
+usefulness to predict bleeding or thrombosis is however debatable .Guide to laboratory tests  |  112
+Different aspects of TEG Ref. Range Units Interpretation
+R-time (reaction time)
+Measures the time between the 
+start of the test until the first sign of fibrin formation3	−	8 min If prolonged, it indicates a longer time for fibrin to form and may be due to a clotting factor defect or anticoagulant therapy .
+K-time
+Measures the speed to reach a certain level of clot strength .1	−	3 min Dependent on the availability of fibrinogen and FXIII and to a lesser extent platelets .
+Alpha angle
+Measures the rapidity of fibrin  
+build-up and cross-linking  
+(clot strengthening)55 − 78 min Dependent on the availability of fibrinogen and FXIII and, to a lesser extent, platelets .
+Different aspects of TEG Ref. Range Interpretation
+Maximum amplitude (MA)Direct function of the maximum dynamic properties of fibrin and platelet bonding via GPIIb / IIIa and represents the ultimate strength / 
+stability of the fibrin clot
+.51	−	69 Affected by platelet function and to a lesser extent by 
+fibrinogen concentration .
+A small MA usually indicates a thrombocytopenia or platelet dysfunction .
+Thromboelastogram index
+ 
+(mathematic product of the netto effect of the R-time, K-time, alpha angle and MA measurements).-3 – +3
+<-3:  hypocoagulable>3+: hypercoagulable, especially if >5.113  |  Ampath Desk Reference
+Other specialised coagulation tests (D-dimer and FDP)
+Analyte What is tested Normal 
+valuesUnits Interpretation
+D-dimer (XDP) Measures 
+cross- 
+linked fibrin 
+degradation 
+products 0 – 0.50 mg/l↑: Causes:  
+DIC. 
+DVT/Pulmonary embolism . 
+Recent surgery . 
+Trauma . 
+Pregnancy . 
+Infection . 
+Cancer . 
+Elderly patients (approximately 0.age for cut-off)  
+Acute coronary syndromes . 
+Cardiac or renal failure . 
+Acute non-lacunar stroke .
+Circulatory half-life of D-dimer is about 12 hours .
+Elevated D-dimer can therefore persist for some time after the active process has ceased .
+D-dimer should always be interpreted in the 
+clinical context and not on its own.
+Fibrin and 
+fibrinogen degradation products (FDP)Semi- quantitative detection of FDP in plasma<5 µg/ml ↑: Acute venous thromboembolism . 
+Myocardial infarction . 
+Severe pneumonia . 
+After major surgery . 
+Systemic fibrinolysis associated with DIC . 
+Thrombolytic therapy with streptokinase .Guide to laboratory tests  |  114
+Disseminated intravascular coagulation (DIC) screen
+There is no single laboratory test that can establish or rule out the diagnosis of DIC .  
+The diagnosis should be made based on an appropriate clinical suspicion supported by relevant 
+laboratory tests .  If clinically indicated, repeat testing should be done if initial results are negative . 
+Tests used in the diagnosis and evaluation of patients with possible DIC :
+Prothrombin time (PT) ↑
+Activated partial thromboplastin time (APTT) ↑
+Thrombin time (TT) ↑
+Fibrinogen normal or ↓
+XDP (D-dimer) ↑FDP ↑Platelets ↓Blood smear: red cell fragments
+ISTH diagnostic scoring system for DIC (International Society of Thrombosis and Haemostasis):Scoring system for overt DIC:Risk assessment:  Does the patient have an underlying disorder known to be associated with overt 
+DIC?
+If yes: proceed .
+If not: do not use this algorithm .
+Score 
+Platelet count (>100 x 10
+9/l = 0, <100 x 109/l  = 1, <50 x 109/l = 2).
+Elevated fibrin marker (e .g. D-dimer, fibrin degradation products).
+(no increase = 0, moderate increase = 2, strong increase = 3).
+Prolonged PT (<3 s = 0, >3 s BUT <6 s = 1, >6 s =2).Fibrinogen level (>1 g/l = 0, <1 g/l = 1).115  |  Ampath Desk Reference
+Calculate score:
+≥5	compatible	with	overt	DIC:	repeat	score	daily.
+<5 suggestive of non-overt DIC: repeat within 1 – 2 days .
+Tests used in the investigation of a thrombotic tendency
+Testing	should	be	done	prior	to	starting	anticoagulation	or	7	−	10	days	after	completion	of	anticoagulation therapy .
+Analyte What is tested Ref. Range Units Interpretation
+Protein S Free Prot S level .
+Prot S is a vit K dependent natural anticoagulant that potentiates the function of protein C .M	60	−	140
+F		70	−	140% ↓:Congenital deficiency . 
+Acquired deficiencies:  
+• Warfarin therapy . 
+• Oestrogen-containing oral contraceptives . 
+• Pregnancy . 
+• Hormone replacement therapy . 
+• Acute-phase reaction . 
+• Liver disease . 
+• Nephrotic syndrome . 
+• L-asparaginase chemotherapy . 
+• DIC . 
+• Some patients with antiphospholipids .Guide to laboratory tests  |  116
+Analyte What is tested Ref. Range Units Interpretation
+Protein C Prot C function
+Prot C is a vit 
+K dependent 
+anticoagulant .
+After activation by thrombin, it forms 
+complexes with prot 
+S and phospholipids 
+to degrade factors Va and VIIIa .70	−	140 % ↓:Congenital deficiency . 
+Acquired deficiencies:  
+• Warfarin therapy . 
+• Liver disease . 
+• DIC . 
+• Early post-operative period . 
+ 
+The presence of aprotinin may result in 
+an underestimation of protein C level .
+Antithrombin Antithrombin function .
+It is an inhibitor of 
+thrombin and its action is enhanced by heparin .
+It also inhibits factor Xa 
+and, to a lesser extent, 
+IXa, XIa,XIIa, plasmin and kallikrein .80	−	120 % ↓:Congenital deficiency . 
+Acquired deficiency:  
+• DIC  
+• Nephrotic syndrome . 
+• Liver disease . 
+• L-asparaginase chemotherapy . 
+• Current massive thrombosis . 
+• Inflammatory bowel disease .
+Some test procedures may be affected by heparin therapy .
+(The current method used by our lab is not affected by therapeutic doses of heparin).
+Thrombin inhibitors may lead to an over- 
+estimation of antithrombin level .117  |  Ampath Desk Reference
+Analyte What is tested Ref. Range Interpretation
+Activated 
+protein C 
+resistance 
+(APC-R).Resistance against 
+activated protein C .≥	120	seconds
+If < 120 seconds 
+sample is regarded as APC-R positive
+In these cases, PCR 
+for factor V Leiden is important .Congenital:• Factor V Leiden  
+(mutation in factor V).
+Acquired:• Lupus anticoagulant .
+• Increased factor VIII levels .
+• Oestrogen-containing oral 
+contraceptives .
+• Hormonal replacement therapy .
+• Pregnancy .
+The presence of thrombin inhibitors may lead to false negative results and aprotinin may lead to false positive results .
+Insensitive to heparin  
+(UFH and LMWH up to 1 IU/ml).
+Factor V Leiden 
+PCRDetect a mutation Arg 506Glu in factor V . 
+This mutation destroys 
+the cleavage site of FVa by activated protein C and results in a slower  inactivation of factor Va by activated prot C .Detects heterozygotes and 
+homozygotes  for Factor V Leiden with 
+a higher risk of thrombosis .Guide to laboratory tests  |  118
+Analyte What is tested Ref. Range Interpretation
+Prothrombin 
+gene mutation 
+PCRDetect a mutation 
+G20210A in the 3’ 
+untranslated region of 
+the prothrombin gene .
+This mutation is 
+associated with elevated levels of prothrombin . Detects heterozygotes and homozygotes for this mutation with a 
+higher risk of thrombosis .
+Plasminogen Fibrinolytic activity . 75	−	150% ↓: DIC. 
+Liver cirrhosis . 
+During and after fibrinolytic therapy,  
+Newborn .
+↑: Acute-phase and malignant disease .
+Lupus 
+anticoagulantSee separate table .119  |  Ampath Desk Reference
+Testing for the presence of a lupus anticoagulant
+Test What is tested Ref. Range Interpretation
+Dilute Russell’s 
+viper venom testThe venom activates FX directly and triggers the coagulation 
+pathway downstream .<1.2 ratio
+If >1.2, a 
+confirmatory test based on the addition of phospholipids is done . Increased: • Lupus anticoagulant .
+• Factor deficiency (X,V, II and fibrinogen). 
+• Other clotting factor inhibitor .
+The presence of a lupus anticoagulant is confirmed if the patient time is shortened by the addition of phospholipids .
+(screen test ratio / confirmed ratio  > 1.15).
+If a clotting factor deficiency or oral 
+anticoagulation, correction will be obtained with addition of normal plasma and not with phospholipids . 
+If other clotting factor inhibitor, no correction 
+will be obtained with either normal plasma or 
+phospholipids .
+Kaolin clotting 
+timeModified aPTT test without added phospholipid .<1.2 ratio
+Increased:• Lupus anticoagulant .
+• Other clotting factor defects .
+If correction with platelet neutralization procedure, it supports the presence of a lupus anticoagulant .Guide to laboratory tests  |  120
+Test What is tested Ref. Range Interpretation
+Lupus sensitive 
+PTTThe reagent has been sensitized to aid the detection of lupus 
+anticoagulants .31.6 – 44   
+seconds
+Prolonged:
+• Lupus anticoagulant .
+• Intrinsic pathway factor deficiencies or 
+inhibitors . 
+• Dysfibrinogenaemia .
+• Presence of heparin and warfarin .
+• Treatment with thrombin inhibitors . 
+• DIC .
+If correction is obtained with platelet neutralization procedure it confirms the presence of a lupus anticoagulant, while correction with normal plasma supports a clotting factor deficiency .
+Monitoring of anticoagulation therapy
+INR (International normalised ratio)
+Standardised way of reporting the Prothrombin time (To compensate for different laboratories using 
+different reagents and instruments).
+Developed for the standardisation of oral anticoagulant treatment . Using the INR system, the 
+patient’s INR should be approximately the same in any laboratory worldwide .
+Used for monitoring of warfarin therapy .
+Therapeutic target varies according to the indication for warfarin, but generally aimed at 2 – 3.5INR >4 – usually over anticoagulated 
+INR <2 – usually under anticoagulated121  |  Ampath Desk Reference
+Antifactor Xa activity (IU/ml)
+Used for monitoring of low molecular weight heparin therapy .
+The medication type (pharmaceutical name) and the time of the last dose should always be 
+supplied .
+Sample should be taken 3 hours after the last dose on Day 2 of treatment , especially if renal 
+dysfunction is present .
+Expected Anti-Xa activity levels for patients on therapy are as follows:
+Prophylaxis:  0.3 – 0.5 IU/ml
+Therapeutic:  0.5 – 1.2  IU/ml
+Valve replacement: 1.0 – 1.2 IU/ml
+Direct thrombin inhibitor (DTI):
+Haemoclot: For the measurement of Dabigatran (Pradaxa) levels.
+Haemoclot Thrombin Inhibitors is an in vitro diagnostic test intended to be used for the quantitative 
+measurement of direct thrombin inhibitors, such as dabigatran, in human citrated plasma .  It is 
+a clotting method based on the inhibition of a constant and defined concentration of thrombin . 
+It is intended for prescriptive use . Measuring DTI concentrations in patient’s plasma may be used 
+as an aid in the management of patients receiving DTIs who are suspected of having excess anticoagulant activity .
+Pradaxa is a direct thrombin inhibitor with a mean half-life of 12 – 17 hours . It is eliminated 
+unchanged primarily in the urine (85%). The rate of elimination by the kidney depends on the individual patient’s kidney function; the half-life of Pradaxa is prolonged in cases of renal impairment .
+The Haemoclot direct inhibitor assay determines dabigatran plasma concentration:Guide to laboratory tests  |  122
+Expected plasma levels
+Two hours after dosing ng/ml 10 - 16 hours after dosing ng/ml
+150 mg bd 175 (117 – 275) 91 (61 – 143)
+110 mg bd 126 (85 – 200) 65 (43 – 102)
+Bone marrow investigation
+Bone marrow aspirate and trephine biopsy can be done to assess the bone marrow status . It is 
+usually done under local anaesthetic or under conscious sedation from the posterior iliac crest of 
+the pelvic bone . Aspirated cells and bone marrow particles are spread onto slides, which allow 
+evaluation of cytological detail, and iron stores can be assessed . The trephine biopsy is fixed and 
+processed for histology assessment .
+Indications for bone marrow investigation
+• Unexplained cytopenias e .g. anaemia, thrombocytopenia, neutropenia and pancytopenia .
+• Suspected bone marrow disorders or infiltration e .g. leukaemia, chronic myeloproliferative 
+neoplasm, myeloma, storage disease, metastatic disease, myelodysplasia, aplastic anaemia .
+• As part of a staging procedure in lymphoma .
+• Suspected infection e .g. TB, fungi .
+Special investigations that can be done on bone marrow aspirate
+• Chromosome analysis (cytogenetics), FISH (fluorescent in situ hybridization) for specific 
+molecular abnormalities and PCR analysis .
+• Immunophenotyping of abnormal populations of cells with flow cytometry .
+• These tests are used to aid in the diagnosis, sub-classification and prognostification of haematological malignancies . Also used to detect evidence of residual disease after 
+treatment .
+• Microbiological cultures e .g. tuberculosis, MCS and fungus culture .123  |  Ampath Desk Reference
+Flow cytometry
+Automated technique where cells are incubated with different monoclonal antibodies that are 
+conjugated to different fluorochromes .  The labelled cells are then passed in a fluid stream past a 
+laser light source, which allows quantification of antigen expression on the population of interest .
+Depending on the underlying pathology, various panels of antibodies can be used to identify the immunophenotype of an abnormal population of cells .
+The technique is very important in the diagnosis and classification of acute and chronic leukaemias and lymphomas, to detect minimal residual disease during disease follow-up and may provide valuable prognostic information . It is also used in the diagnosis of PNH  
+(paroxysmal nocturnal hemoglobinuria).
+Flow cytometry can be performed on blood samples, bone marrow aspirate, FNA samples and 
+body fluids e .g. pleural effusions, ascites fluid and CSF .
+Sample needed: EDTA (purple top) or heparin (green top).
+At our laboratory, flow cytometry testing and data analysis are being performed in accordance with 
+EuroFlow protocols .
+The EuroFlow protocol is a standardised method of flow cytometric testing for the diagnosis and classification of haematological malignancies .  It is currently the only available protocol that is 
+completely validated and standardised at every stage of flow cytometry testing .  The adoption 
+of this protocol ensures that our laboratory is able to maintain an international standard in haematological flow cytometry .  
+Tests used in the investigation of a haemolytic process
+Reticulocyte count
+Reticulocytes are young red cells, which contain remnants of RNA .
+Normal range: 0.5 – 2.5 %  (absolute count 50 – 100 x 109/l)Guide to laboratory tests  |  124
+Increase with increased erythropoietic activity e .g. blood loss, haemolysis and response on 
+haematinic replacement therapy .
+Decreased: red cell production defect e .g. bone marrow disorders and dietary deficiencies .
+Reticulocyte production index (RPI)
+The reticulocyte production index (RPI) can be calculated to assess whether the reticulocyte 
+response is appropriate for the degree of the anaemia .
+RPI: 1 – when Hb is normal and marrow activity normal
+RPI >2.5 – when anaemia is due to haemolysis, bleeding or hyposplenism and bone marrow 
+response is normal
+RPI <2 − when anaemia is due to marrow failure for any reason e .g. iron deficiency, vit B12 / folate 
+deficiency or bone marrow infiltration
+Direct Coombs test
+Detect the coating of red cells by immunoglobulins and / or complement .
+Causes for a positive Direct Coombs include:Autoimmune haemolytic anaemia (warm type and cold type).  
+Alloimmune haemolytic anaemia (mismatched transfusion, haemolytic disease of the newborn and 
+following solid organ or bone marrow transplantation).  
+Drug induced immune haemolytic anaemia . 
+False adsorption of antibodies to the surface of the red cells (occurs in some cases of HIV).
+Osmotic fragility
+Red cells are suspended in different concentrations of saline and the degree of haemolysis is assessed by spectophotometry .  Spherocytes have an increased volume / surface area ratio and 
+are therefore more susceptible to lysis than normal red blood cells . 125  |  Ampath Desk Reference
+If the blood smear shows a picture of spherocytic haemolysis, it is usual practice to start with a Direct 
+Coombs test .  If negative, an osmotic fragility could be done and if that is increased, a sample 
+should be sent for red cell membrane protein electrophoresis to confirm a possible congenital spherocytosis .
+Hb electrophoresis / Abnormal haemoglobin screen
+A lysate of red cells is applied to a gel and an electronic current is applied at an acid and alkaline pH . 
+Different haemoglobins show different migration patterns . 
+Indication: to detect the presence of inherited haemoglobin defects e .g. Hb S (sickle cell disorders), 
+Hb E, Hb C, Hb D, Hb H and thalassaemia . 
+Our laboratory has changed to a new method of using ion-exchange high-performance liquid chromatography (HPLC) to detect abnormal haemoglobin in whole blood and to determine the percentages of Hb A2 and HbF . 
+Testing for haemosiderin in the urine
+It can be used as a marker of intravascular haemolysis . 
+With intravascular haemolysis, haemoglobin is released from the red blood cells into the bloodstream in excess of the binding capacity of haptoglobin . The excess haemoglobin is then 
+filtered by the kidney and reabsorbed in the proximal tubule .  The iron portion then gets stored as 
+ferritin or haemosiderin . 
+When the tubule cells get sloughed off, the haemosiderin gets excreted into the urine .  It can remain 
+in the urine for several weeks .  
+Haptoglobin assay can also be used as a more reliable marker for intravascular haemolysis . A 
+decreased level of haptoglobin will support the presence of intravascular haemolysis .Guide to laboratory tests  |  126
+PNH screen (paroxysmal nocturnal haemoglobinuria)
+Haemosiderin in the urine – confirms the presence of intravascular haemolysis . 
+Flow cytometry: at our laboratory, we perform immunophenotyping of the neutrophils for the 
+expression of FLAER and CD24 and monocytes for the expression of CD14 and FLAER . In PNH, there is 
+a decreased expression of these antigens .
+Sample needed: peripheral blood (EDTA or heparin).
+Testing for inherited enzyme abnormalities
+• Glucose-6-phosphate dehydrogenase defiency (G6PD).
+A screening test is done and if positive, a quantitative test should be done for confirmation .
+Reticulocytes have higher G6PDH levels and therefore false negative results may be obtained if testing is done during a reticulocytosis .
+• Pyruvate kinase deficiency screen .
+Malaria testing
+• Thin smear – used for species identification and quantification of parasite load . 
+• Thick smear – higher detection rate, but cannot be used for species identification or quantification .
+• Fluorescent microscopy/Quantitative Buffy Coat method (malaria parasites fluorescent after staining with acridine orange).  Fairly sensitive, but false positives may occur in the presence of Howell Jolly bodies and reticulocytes .  May be used as an additional screening test .   
+Increases the detection rate and is more sensitive than the thick smear .
+• Malaria antigen testing based on the presence of certain malaria antigens (pLDH and HRP-2). It aids in the detection and identification of malaria and is usually used in conjunction with the thin smear .
+• Malaria PCR – parasite nucleic acids are detected .  Not suitable for routine diagnostic use, 
+but may be useful in selected cases – most useful for species identification .
+• If malaria profile is negative, but clinical suspicion is high, repeat testing is advised .127  |  Ampath Desk Reference
+JAK2 V617F PCR
+Principle : A real-time polymerase chain reaction assay which is used to identify the JAK2 V617F 
+mutation . 
+Indication: It is usually requested where a chronic myeloproliferative neoplasm is suspected from the 
+clinical picture, peripheral blood and / or bone marrow findings .
+Sample type :  Blood or bone marrow collected in EDTA (purple top).
+Clinical use and interpretation : 
+The presence of the Jak-2 V617F mutation will support the diagnosis of an underlying chronic myeloproliferative neoplasm . 
+A bone marrow investigation will usually be performed to confirm the diagnosis and to identify which 
+type of myeloproliferative disorder is present . 
+The highest incidence of the JAK2 V617F mutation is found in polycythaemia vera (65-97% of cases will be positive).  The mutation may also be present in approximately 50% of cases of essential thrombocythaemia and primary myelofibrosis .   
+It is negative in CML (Chronic myelocytic leukaemia).
+If polycythaemia vera is suspected clinically and the Jak-2 V617F PCR is negative, further screening for 
+JAK2 exon 12 mutations can be arranged .
+Please take note that a negative JAK2 screen does not exclude the presence of a chronic 
+myeloproliferative disorder . 
