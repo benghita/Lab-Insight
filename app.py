@@ -65,11 +65,8 @@ def main():
 
             if generate_button:
                 # Generate report using PALM
-                generated_report = generate_report()
+                generate_report()
                 
-                # Display the generated report
-                st.header("Generated Report:")
-                st.text(generated_report)
 
 # Function to display numeric input form
 def display_numeric_form(selected_options, section):
