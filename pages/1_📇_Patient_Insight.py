@@ -37,7 +37,6 @@ df = pd.read_csv(excel_file_path, sep=";")
 # Function to display numeric input form
 def display_numeric_form(selected_options, section):
 
-    st.subheader(f"{section} Analysis:")
     st.session_state.result = {}
     for option in selected_options:
         row = df[(df["field"] == section) & (df["mesure"] == option)].iloc[0]
@@ -120,15 +119,17 @@ def main():
         st.subheader("Enter Analysis result:")
 
         if st.session_state.biochemistry_options :
-
+            
+            st.subheader(f"Biochemistry Analysis:")
             # Display form for selected Biochemistry options
-            st.session_state.biochemistry_result = display_numeric_form(st.session_state.biochemistry_options, "Biochemistry")
+            st.session_state.biochemistry_result = display_numeric_form(st.session_state.biochemistry_options, "BIOCHEMISTRY")
 
         # Display form for selected Hematology options
         if st.session_state.hematology_options :
 
+            st.subheader(f"Hematology Analysis:")
             # Display form for selected Biochemistry options
-            st.session_state.hematology_options = display_numeric_form(st.session_state.hematology_options, "Hematology")
+            st.session_state.hematology_options = display_numeric_form(st.session_state.hematology_options, "HAEMATOLOGY")
 
         if st.session_state.biochemistry_result : 
             st.button("Generate Report", on_click=next)
