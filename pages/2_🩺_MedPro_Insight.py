@@ -1,0 +1,156 @@
+# Import necessary libraries
+import streamlit as st
+from langchain.embeddings.openai import OpenAIEmbeddings
+from langchain.vectorstores import Chroma
+from langchain.llms import OpenAI
+from langchain.chains import RetrievalQA
+import pandas as pd
+from fpdf import FPDF
+import os 
+
+os.environ['OPENAI_API_KEY'] = "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"
+
+st.set_page_config(
+   page_title="Lab Insight",
+   page_icon="🔬",
+   #layout="wide",
+   initial_sidebar_state="expanded",
+)
+
+# initialization of page variabal
+if "page" not in st.session_state :
+   
+    st.session_state.page = 0
+
+def next():
+    st.session_state.page = st.session_state.page + 1
+
+def back():
+    st.session_state.page = st.session_state.page - 1
+
+def reset():
+    st.session_state.page = 0
+
+persist_dir = "./persist_db/"
+
+# Load the Excel file with field, subfield, measure, etc.
+excel_file_path = "./data.csv"
+df = pd.read_csv(excel_file_path, sep=";")
+
+# Function to display numeric input form
+def display_numeric_form(selected_options, section):
+
+    st.subheader(f"{section} Analysis:")
+    st.session_state.result = {}
+    for option in selected_options:
+        row = df[(df["field"] == section) & (df["mesure"] == option)].iloc[0]
+        unit = row["unit"] if "unit" in df.columns else ""
+
+        # Create numeric input for each selected option
+        value = st.number_input(f"{option} ({unit})", min_value=0.0, key=f"{section}_{option}")
+        st.session_state.result[option] = f"{option} = {value} {unit}"
+        
+    return st.session_state.result
+
+
+
+# Function to generate a report using PALM
+def generate_report():
+    vectordb = None
+    embedding = OpenAIEmbeddings()
+
+    pdf = FPDF()
+    pdf.set_auto_page_break(auto=True, margin=50)
+    pdf.add_page()
+    pdf.set_font("serif", size=25, style='B')
+    pdf.multi_cell(0, 10, "Generated Report", 0, 0, 'C')
+
+    st.subheader("Generating report")
+    for mesure in st.session_state.result.keys() : 
+        
+        query = f"""write the interpretation of the terms in the following blood "{st.session_state.result[mesure]}"/
+                and explain the in detail its meanings."""
+        
+        section = df[df["mesure"] == mesure]["section"]
+        vectordb = Chroma(embedding_function = embedding,
+                        persist_directory = f"{persist_dir}BIOCHEMISTRY/{section}")
+
+        chain = RetrievalQA.from_chain_type(llm = OpenAI(),
+                                            retriever = vectordb.as_retriever(),
+                                            chain_type="stuff")
+        generated_text = chain.run(query)
+        
+        st.write(mesure)
+        
+        pdf.set_font("serif", size=20, style='B')
+        pdf.multi_cell(0, 10, mesure)
+        
+        st.markdown(generated_text)
+
+        pdf.set_font("serif", size=12)
+        pdf.multi_cell(0, 10, generated_text)
+
+    pdf.output("output.pdf")
+
+# Streamlit app layout
+def main():
+
+    st.title(':stethoscope: MedPro :blue[Insight]')
+
+    if st.session_state.page == 0 :
+        # User information form
+        st.subheader("User Information / Analysis Options:")
+        # Radio input for sex
+        st.session_state.sex = st.radio("Select Sex:", ["Male", "Female"])
+
+        # Numeric input for age
+        st.session_state.age = st.number_input("Enter Age:", min_value=1, value=10, max_value=100)
+
+        # Multi-select for Biochemistry
+        st.session_state.biochemistry_options = st.multiselect("Select Biochemistry Analysis:", df[df["field"] == "BIOCHEMISTRY"]["mesure"])
+
+        # Multi-select for Hematology
+        st.session_state.hematology_options = st.multiselect("Select Hematology Analysis:", df[df["field"] == "HAEMATOLOGY"]["mesure"])
+
+        if st.session_state.biochemistry_options or st.session_state.hematology_options : 
+            st.button("Next", on_click=next)
+
+    elif st.session_state.page == 1 :
+
+        # User information form
+        st.button("Back", on_click = back)
+
+        st.subheader("Enter Analysis result:")
+
+        if st.session_state.biochemistry_options :
+
+            # Display form for selected Biochemistry options
+            st.session_state.biochemistry_result = display_numeric_form(st.session_state.biochemistry_options, "Biochemistry")
+
+        # Display form for selected Hematology options
+        if st.session_state.hematology_options :
+
+            # Display form for selected Biochemistry options
+            st.session_state.hematology_options = display_numeric_form(st.session_state.hematology_options, "Hematology")
+
+        if st.session_state.biochemistry_result : 
+            st.button("Generate Report", on_click=next)
+
+    elif st.session_state.page == 2 :
+
+        if st.session_state.result :
+
+            generate_report()
+
+            with open("output.pdf", "rb") as f:
+                pdf_file = f.read()
+
+            # Download button for the PDF
+            st.download_button(label="Download report as PDF", data=pdf_file, file_name=f"lab_analysis_report.pdf")
+
+            #Reset button
+            st.button(label = "Reset", on_click=reset)
+
+
+if __name__ == "__main__":
+    main()
