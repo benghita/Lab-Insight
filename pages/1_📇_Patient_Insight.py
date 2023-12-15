@@ -58,7 +58,7 @@ def generate_report():
     pdf = FPDF()
     pdf.set_auto_page_break(auto=True, margin=50)
     pdf.add_page()
-    pdf.set_font("serif", size=25, style='B')
+    pdf.set_font("times", size=25, style='B')
     pdf.multi_cell(0, 10, "Generated Report", 0, 0, 'C')
 
     st.subheader("Generating report")
@@ -78,12 +78,12 @@ def generate_report():
         
         st.write(mesure)
         
-        pdf.set_font("serif", size=20, style='B')
+        pdf.set_font("times", size=20, style='B')
         pdf.multi_cell(0, 10, mesure)
         
         st.markdown(generated_text)
 
-        pdf.set_font("serif", size=12)
+        pdf.set_font("times", size=12)
         pdf.multi_cell(0, 10, generated_text)
 
     pdf.output("output.pdf")
