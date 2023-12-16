@@ -5,3 +5,4 @@ openai
 chromadb==0.3.29
 tiktoken
 fpdf
+faiss-cpu

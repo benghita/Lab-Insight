@@ -7,16 +7,15 @@ from langchain.chains import RetrievalQA
 import pandas as pd
 from fpdf import FPDF
 
+# page configuration
 st.set_page_config(
    page_title="Lab Insight",
    page_icon="🔬",
-   #layout="wide",
    initial_sidebar_state="expanded",
 )
 
-# initialization of page variabal
-if "page" not in st.session_state :
-   
+# Initialization of page variabal and functions
+if "page" not in st.session_state : 
     st.session_state.page = 0
 
 def next():
@@ -37,56 +36,71 @@ df = pd.read_csv(excel_file_path, sep=";")
 # Function to display numeric input form
 def display_numeric_form(selected_options, section):
 
-    st.session_state.result = {}
+    result = {}
     for option in selected_options:
+
         row = df[(df["field"] == section) & (df["mesure"] == option)].iloc[0]
         unit = row["unit"] if "unit" in df.columns else ""
 
         # Create numeric input for each selected option
         value = st.number_input(f"{option} ({unit})", min_value=0.0, key=f"{section}_{option}")
-        st.session_state.result[option] = f"{option} = {value} {unit}"
+        result[option] = f"{option} = {value} {unit}"
         
-    return st.session_state.result
+    return result
 
-
-
-# Function to generate a report using PALM
+# Function to generate and save a report using GPT-3.5-turbo
 def generate_report():
-    vectordb = None
+
+    # Define embedding
     embedding = OpenAIEmbeddings()
 
+    # Initialize a FPDF object
     pdf = FPDF()
     pdf.set_auto_page_break(auto=True, margin=50)
     pdf.add_page()
     pdf.set_font("times", size=25, style='B')
-    pdf.multi_cell(0, 10, "Generated Report", 0, 0, 'C')
+    pdf.multi_cell(0, 10, "Generated Report : ", 0, 0, 'C')
 
-    st.subheader("Generating report")
-    for mesure in st.session_state.result.keys() : 
-        
-        query = f"""write the interpretation of the terms in the following blood "{st.session_state.result[mesure]}"/
-                and explain the in detail its meanings."""
-        
-        section = df[df["mesure"] == mesure]["section"]
-        vectordb = Chroma(embedding_function = embedding,
-                        persist_directory = f"{persist_dir}BIOCHEMISTRY/{section}")
+    st.subheader("Generated Report")
 
-        chain = RetrievalQA.from_chain_type(llm = OpenAI(),
-                                            retriever = vectordb.as_retriever(),
-                                            chain_type="stuff")
-        generated_text = chain.run(query)
-        
-        st.write(mesure)
-        
-        pdf.set_font("times", size=20, style='B')
-        pdf.multi_cell(0, 10, mesure)
-        
-        st.markdown(generated_text)
+    report = []
 
-        pdf.set_font("times", size=12)
-        pdf.multi_cell(0, 10, generated_text)
+    if "report" not in st.session_state :
+        for mesure in st.session_state.result.keys() : 
+            
+            # Define and run prompt
+            query = f"""write the interpretation of the terms in the following blood "{st.session_state.result[mesure]}"/
+                    and explain the in detail its meanings."""
+            
+            section = df[df["mesure"] == mesure]["section"]
+            vectordb = Chroma(embedding_function = embedding,
+                              persist_directory = f"{persist_dir}BIOCHEMISTRY/{section}")
 
-    pdf.output("output.pdf")
+            chain = RetrievalQA.from_chain_type(llm = OpenAI(),
+                                                retriever = vectordb.as_retriever(),
+                                                chain_type="stuff")
+            generated_text = chain.run(query)
+
+            subheader = f"- {mesure} :"
+            # Save report
+            report.append(subheader)
+            report.append(generated_text)
+
+            # Print results
+            st.write(subheader)
+            st.markdown(generated_text)
+            
+            # Save in fpdf object
+            pdf.set_font("times", size=20, style='B')
+            pdf.multi_cell(0, 10, subheader)
+            pdf.set_font("times", size=12)
+            pdf.multi_cell(0, 10, generated_text)
+
+        pdf.output("output.pdf")
+        st.session_state.report = ("\n").join(report)
+    
+    else :
+        st.write(st.session_state.report)
 
 # Streamlit app layout
 def main():
@@ -122,32 +136,32 @@ def main():
             
             st.subheader(f"Biochemistry Analysis:")
             # Display form for selected Biochemistry options
-            st.session_state.biochemistry_result = display_numeric_form(st.session_state.biochemistry_options, "BIOCHEMISTRY")
+        st.session_state.biochemistry_result = display_numeric_form(st.session_state.biochemistry_options, "BIOCHEMISTRY")
 
         # Display form for selected Hematology options
         if st.session_state.hematology_options :
 
             st.subheader(f"Hematology Analysis:")
             # Display form for selected Biochemistry options
-            st.session_state.hematology_options = display_numeric_form(st.session_state.hematology_options, "HAEMATOLOGY")
-
-        if st.session_state.biochemistry_result : 
-            st.button("Generate Report", on_click=next)
+        st.session_state.hematology_result = display_numeric_form(st.session_state.hematology_options, "HAEMATOLOGY")
+ 
+        st.button("Generate Report", on_click=next)
 
     elif st.session_state.page == 2 :
 
-        if st.session_state.result :
+        st.session_state.biochemistry_result.update(st.session_state.hematology_result)
+        st.session_state.result = st.session_state.biochemistry_result
 
-            generate_report()
+        generate_report()
 
-            with open("output.pdf", "rb") as f:
-                pdf_file = f.read()
+        with open("output.pdf", "rb") as f:
+            pdf_file = f.read()
 
-            # Download button for the PDF
-            st.download_button(label="Download report as PDF", data=pdf_file, file_name=f"lab_analysis_report.pdf")
+        # Download button for the PDF
+        st.download_button(label="Download report as PDF", data=pdf_file, file_name=f"lab_analysis_report.pdf")
 
-            #Reset button
-            st.button(label = "Reset", on_click=reset)
+        #Reset button
+        st.button(label = "Reset", on_click=reset)
 
 
 if __name__ == "__main__":
