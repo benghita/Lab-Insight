@@ -1,26 +1,31 @@
 # Import necessary libraries
 import streamlit as st
 from langchain.embeddings.openai import OpenAIEmbeddings
+from langchain.chains import ConversationalRetrievalChain
+from langchain.prompts import ChatPromptTemplate
 from langchain.vectorstores import Chroma
-from langchain.llms import OpenAI
-from langchain.chains import RetrievalQA
+from langchain.chat_models import ChatOpenAI
+from langchain.prompts import HumanMessagePromptTemplate
+from langchain.prompts import SystemMessagePromptTemplate
 import pandas as pd
 from fpdf import FPDF
-import os 
 
-os.environ['OPENAI_API_KEY'] = "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"
-
+# page configuration
 st.set_page_config(
    page_title="Lab Insight",
    page_icon="🔬",
-   #layout="wide",
    initial_sidebar_state="expanded",
 )
 
-# initialization of page variabal
-if "page" not in st.session_state :
-   
+# Initialization of session_state variabals and functions
+if "page" not in st.session_state : 
     st.session_state.page = 0
+
+if 'history' not in st.session_state:
+    st.session_state['history'] = []
+
+if "medpro_report" not in st.session_state :
+    st.session_state.medpro_report = []
 
 def next():
     st.session_state.page = st.session_state.page + 1
@@ -30,6 +35,7 @@ def back():
 
 def reset():
     st.session_state.page = 0
+    st.session_state.medpro_report = []
 
 persist_dir = "./persist_db/"
 
@@ -40,57 +46,147 @@ df = pd.read_csv(excel_file_path, sep=";")
 # Function to display numeric input form
 def display_numeric_form(selected_options, section):
 
-    st.subheader(f"{section} Analysis:")
-    st.session_state.result = {}
+    result = {}
     for option in selected_options:
+
         row = df[(df["field"] == section) & (df["mesure"] == option)].iloc[0]
         unit = row["unit"] if "unit" in df.columns else ""
 
         # Create numeric input for each selected option
         value = st.number_input(f"{option} ({unit})", min_value=0.0, key=f"{section}_{option}")
-        st.session_state.result[option] = f"{option} = {value} {unit}"
+        result[option] = f"{option} = {value} {unit}"
         
-    return st.session_state.result
+    return result
 
+def conversational_chat(query):
+    
+    result = st.session_state.chain({"question": query, 
+    "chat_history": st.session_state['history']})
+    st.session_state['history'].append((query, result["answer"]))
+    
+    return result["answer"]
 
+# Initialize a FPDF object
+def create_pdf():
+    title = "Lab insight Report"
+    pdf = FPDF()
+    pdf.add_page()
+    pdf.set_font('Arial', 'B', 15)
+    pdf.set_auto_page_break(auto=True)
+    # Calculate width of title and position
+    w = pdf.get_string_width(title) + 6
+    pdf.set_x((210 - w) / 2)
+    # Colors of frame, background and text
+    pdf.set_draw_color(53, 89, 224)
+    pdf.set_fill_color(255, 236, 214)
+    pdf.set_text_color(15, 33, 103)
+    # Thickness of frame (1 mm)
+    pdf.set_line_width(1)
+    # Title
+    pdf.cell(w, 9, title, 1, 1, 'C', 1)
+    # Line break
+    pdf.ln(10)
+    return pdf
 
-# Function to generate a report using PALM
+def add_to_pdf(pdf, subheader, text):
+    # Arial 12
+    pdf.set_font('Arial', '', 12)
+    # Background color
+    pdf.set_fill_color(200, 220, 255)
+    # Title
+    pdf.cell(0, 6, subheader, 0, 1, 'L', 1)
+    # Line break
+    pdf.ln(4)
+    # Times 12
+    pdf.set_font('Times', '', 12)
+    # Output justified text
+    pdf.multi_cell(0, 5, text)
+    # Line break
+    pdf.ln()
+
+def get_answer(query, chain):
+    result = chain({"question": query, "chat_history": st.session_state['history']})
+    generated_text = result["answer"]
+    st.session_state['history'].append((query, generated_text))
+    return generated_text
+
+def save_and_print(report, subheader, generated_text, pdf):
+    
+    # Save report
+    report.append(subheader)
+    report.append(generated_text)
+
+    # Print results
+    st.write(f"**{subheader}**")
+    st.markdown(generated_text)
+    
+    # Save in fpdf object
+    add_to_pdf(pdf, subheader, generated_text)
+
+    return report
+
+# Function to generate and save a report using GPT-3.5-turbo
 def generate_report():
-    vectordb = None
+
+    # Define embedding
     embedding = OpenAIEmbeddings()
 
-    pdf = FPDF()
-    pdf.set_auto_page_break(auto=True, margin=50)
-    pdf.add_page()
-    pdf.set_font("serif", size=25, style='B')
-    pdf.multi_cell(0, 10, "Generated Report", 0, 0, 'C')
+    pdf = create_pdf()
 
-    st.subheader("Generating report")
-    for mesure in st.session_state.result.keys() : 
-        
-        query = f"""write the interpretation of the terms in the following blood "{st.session_state.result[mesure]}"/
-                and explain the in detail its meanings."""
-        
-        section = df[df["mesure"] == mesure]["section"]
-        vectordb = Chroma(embedding_function = embedding,
-                        persist_directory = f"{persist_dir}BIOCHEMISTRY/{section}")
+    st.subheader("Generated Report", divider = "blue")
 
-        chain = RetrievalQA.from_chain_type(llm = OpenAI(),
-                                            retriever = vectordb.as_retriever(),
-                                            chain_type="stuff")
-        generated_text = chain.run(query)
+    if not st.session_state.medpro_report:
         
-        st.write(mesure)
-        
-        pdf.set_font("serif", size=20, style='B')
-        pdf.multi_cell(0, 10, mesure)
-        
-        st.markdown(generated_text)
+        report = []
+        # Define the system message template
+        system_template ="""You are a helpful medical assistant 
+                        and you will receive a patient's blood test results.
+                        Your job is to explain the meaning of the result in detail to a medical professional and to answer the his questions without asking any farther info.
+                        Keep in mind that the medical professional understand basic medical concepts and you sould help him in the diagnosis.
+                        ----------------
+                        {context}"""
+        # Create the chat prompt templates
+        messages = [SystemMessagePromptTemplate.from_template(system_template),
+                    HumanMessagePromptTemplate.from_template("{question}")]
+        qa_prompt = ChatPromptTemplate.from_messages(messages)
+        user_info = f"considering that : sex = {st.session_state.sex}, age = {st.session_state.age}"
+        for mesure in st.session_state.result.keys() : 
+            
+            section = df[df["mesure"] == mesure]["section"]
+            field = df[df["mesure"] == mesure]["field"]
 
-        pdf.set_font("serif", size=12)
-        pdf.multi_cell(0, 10, generated_text)
+            # Define and run prompt
+            query = f"""waht is the meaning of {st.session_state.result[mesure]}? {user_info}"""
+            user_info = ""
+            
+            vectordb = Chroma(embedding_function = embedding,
+                              persist_directory = f"{persist_dir}{field}/{section}")
 
-    pdf.output("output.pdf")
+            chain = ConversationalRetrievalChain.from_llm(llm = ChatOpenAI(temperature = 0.0, model_name = 'gpt-3.5-turbo'),
+                                                combine_docs_chain_kwargs={"prompt": qa_prompt} ,
+                                                retriever = vectordb.as_retriever())
+            generated_text = get_answer(query, chain)
+
+            subheader = f"- {mesure} :"
+            # Save report
+            report = save_and_print(report, subheader, generated_text, pdf)
+
+        query = f"""waht are Possible causes of abnormal results?"""
+        generated_text = get_answer(query, chain)
+        subheader = "-  Possible causes of abnormal results :"
+        report = save_and_print(report, subheader, generated_text, pdf)
+        
+        query = f"""What are the possible diagnoses based on the patient's laboratory results?"""
+        generated_text = get_answer(query, chain)
+        subheader = "-  Possible diagnoses :"
+        report = save_and_print(report, subheader, generated_text, pdf)
+
+        pdf.output("output.pdf")
+        st.session_state.medpro_report = report
+    
+    else :
+        for i in st.session_state.medpro_report: 
+            st.write(i)
 
 # Streamlit app layout
 def main():
@@ -99,7 +195,7 @@ def main():
 
     if st.session_state.page == 0 :
         # User information form
-        st.subheader("User Information / Analysis Options:")
+        st.subheader("Patient Information / Analysis Options:")
         # Radio input for sex
         st.session_state.sex = st.radio("Select Sex:", ["Male", "Female"])
 
@@ -123,33 +219,35 @@ def main():
         st.subheader("Enter Analysis result:")
 
         if st.session_state.biochemistry_options :
-
+            
+            st.subheader(f"Biochemistry Analysis:")
             # Display form for selected Biochemistry options
-            st.session_state.biochemistry_result = display_numeric_form(st.session_state.biochemistry_options, "Biochemistry")
+        st.session_state.biochemistry_result = display_numeric_form(st.session_state.biochemistry_options, "BIOCHEMISTRY")
 
         # Display form for selected Hematology options
         if st.session_state.hematology_options :
 
+            st.subheader(f"Hematology Analysis:")
             # Display form for selected Biochemistry options
-            st.session_state.hematology_options = display_numeric_form(st.session_state.hematology_options, "Hematology")
-
-        if st.session_state.biochemistry_result : 
-            st.button("Generate Report", on_click=next)
+        st.session_state.hematology_result = display_numeric_form(st.session_state.hematology_options, "HAEMATOLOGY")
+ 
+        st.button("Generate Report", on_click=next)
 
     elif st.session_state.page == 2 :
 
-        if st.session_state.result :
+        st.session_state.biochemistry_result.update(st.session_state.hematology_result)
+        st.session_state.result = st.session_state.biochemistry_result
 
-            generate_report()
+        generate_report()
 
-            with open("output.pdf", "rb") as f:
-                pdf_file = f.read()
+        with open("output.pdf", "rb") as f:
+            pdf_file = f.read()
 
-            # Download button for the PDF
-            st.download_button(label="Download report as PDF", data=pdf_file, file_name=f"lab_analysis_report.pdf")
+        # Download button for the PDF
+        st.download_button(label="Download report as PDF", data=pdf_file, file_name=f"lab_analysis_report.pdf")
 
-            #Reset button
-            st.button(label = "Reset", on_click=reset)
+        #Reset button
+        st.button(label = "Reset", on_click=reset)
 
 
 if __name__ == "__main__":
