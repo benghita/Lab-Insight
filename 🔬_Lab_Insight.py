@@ -3,14 +3,8 @@ import streamlit as st
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.document_loaders.csv_loader import CSVLoader
 from langchain.vectorstores import FAISS
-from langchain.llms import OpenAI
 from langchain.chat_models import ChatOpenAI
 from langchain.chains import ConversationalRetrievalChain
-import pandas as pd
-from fpdf import FPDF
-import os 
-
-os.environ['OPENAI_API_KEY'] = "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"
 
 st.set_page_config(
    page_title="Lab Insight",
