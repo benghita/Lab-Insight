@@ -31,7 +31,7 @@ def display_measure_info(search_term):
     st.markdown(conversational_chat(query))
     
     st.markdown(f"**- Is {search_term} availbale in the app :**")
-    query = f"is {search_term} availbale in the provided data ? \n if yes list the related maesures in the following info in JSON format :the field, the mesure name and the unit"
+    query = f"is {search_term} availbale in the provided data ? \n if yes list the related maesures in the following info in table format :the field, the mesure name and the unit"
     st.markdown(conversational_chat(query))
     st.session_state['history'] = []
 
