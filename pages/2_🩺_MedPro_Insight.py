@@ -201,7 +201,7 @@ def main():
 
     if st.session_state.page == 0 :
         # User information form
-        st.subheader("Patient Information / Analysis Options:")
+        st.subheader("Patient Information / Analyses Options:")
         # Radio input for sex
         st.session_state.sex = st.radio("Select Sex:", ["Male", "Female"])
 
@@ -209,10 +209,10 @@ def main():
         st.session_state.age = st.number_input("Enter Age:", min_value=1, value=10, max_value=100)
 
         # Multi-select for Biochemistry
-        st.session_state.biochemistry_options = st.multiselect("Select Biochemistry Analysis:", df[df["field"] == "BIOCHEMISTRY"]["mesure"])
+        st.session_state.biochemistry_options = st.multiselect("Select Biochemistry Analyses:", df[df["field"] == "BIOCHEMISTRY"]["mesure"])
 
         # Multi-select for Hematology
-        st.session_state.hematology_options = st.multiselect("Select Hematology Analysis:", df[df["field"] == "HAEMATOLOGY"]["mesure"])
+        st.session_state.hematology_options = st.multiselect("Select Hematology Analyses:", df[df["field"] == "HAEMATOLOGY"]["mesure"])
 
         if st.session_state.biochemistry_options or st.session_state.hematology_options : 
             st.button("Next", on_click=next)
@@ -222,18 +222,18 @@ def main():
         # User information form
         st.button("Back", on_click = back)
 
-        st.subheader("Enter Analysis result:")
+        st.subheader("Enter Analyses result:")
 
         if st.session_state.biochemistry_options :
             
-            st.subheader(f"Biochemistry Analysis:")
+            st.markdown(f"**Biochemistry Analyses:** ")
             # Display form for selected Biochemistry options
         st.session_state.biochemistry_result = display_numeric_form(st.session_state.biochemistry_options, "BIOCHEMISTRY")
 
         # Display form for selected Hematology options
         if st.session_state.hematology_options :
 
-            st.subheader(f"Hematology Analysis:")
+            st.markdown(f"**Hematology Analyses:**")
             # Display form for selected Biochemistry options
         st.session_state.hematology_result = display_numeric_form(st.session_state.hematology_options, "HAEMATOLOGY")
  
