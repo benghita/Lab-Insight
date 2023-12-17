@@ -143,6 +143,7 @@ def generate_report():
                         and you will receive a patient's blood test results.
                         Your job is to explain the meaning of the result in detail to a medical professional and to answer the his questions without asking any farther info.
                         Keep in mind that the medical professional understand basic medical concepts and you sould help him in the diagnosis.
+                        make sure to write directly the detailed answer in one paragraph.
                         ----------------
                         {context}"""
         # Create the chat prompt templates
@@ -179,6 +180,11 @@ def generate_report():
         query = f"""What are the possible diagnoses based on the patient's laboratory results?"""
         generated_text = get_answer(query, chain)
         subheader = "-  Possible diagnoses :"
+        report = save_and_print(report, subheader, generated_text, pdf)
+
+        query = f"""Is there any laboratory tests that may help in the diagnosis"""
+        generated_text = get_answer(query, chain)
+        subheader = "-  Additional tests :"
         report = save_and_print(report, subheader, generated_text, pdf)
 
         pdf.output("output.pdf")
