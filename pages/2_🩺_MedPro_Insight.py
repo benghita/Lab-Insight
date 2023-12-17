@@ -143,7 +143,7 @@ def generate_report():
                         and you will receive a patient's blood test results.
                         Your job is to explain the meaning of the result in detail to a medical professional and to answer the his questions without asking any farther info.
                         Keep in mind that the medical professional understand basic medical concepts and you sould help him in the diagnosis.
-                        make sure to write directly the detailed answer in one paragraph.
+                        make sure to write directly a detailed and specific answer.
                         ----------------
                         {context}"""
         # Create the chat prompt templates
