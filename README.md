@@ -1,5 +1,17 @@
 # Lab Insight App
-Welcome to the Lab Insight App! This application provides a comprehensive platform for generating and understanding blood test reports. Below is an overview of the project structure and key components.
+
+## Abstract
+The Lab Insight App is a comprehensive tool designed to facilitate the understanding and interpretation of blood test results. This project addresses the need for a user-friendly interface that empowers both patients and medical professionals to explore, analyze, and generate informative reports based on blood test measures.
+
+## Background and Problem Statement
+Interpreting blood test results can be challenging for individuals without a medical background. Patients often struggle to comprehend the significance of various measures, while medical professionals need efficient tools to generate detailed reports for their patients. The Lab Insight App aims to bridge this gap by providing a user-friendly platform that translates complex blood test data into easily understandable reports.
+
+## Impact and Proposed Solution
+The Lab Insight App has a significant impact on healthcare by:
+- Empowering Patients: Patients can input their blood test results, receive detailed explanations, and make informed decisions about their health.
+- Assisting Medical Professionals: Healthcare practitioners can use the app to generate professional reports quickly, enhancing communication with patients.
+- Enhancing Healthcare Accessibility: The app's user-friendly interface makes it accessible to a broader audience, promoting health literacy.
+The proposed solution involves leveraging natural language processing through LangChain for searching and interpreting blood test measures. The app ensures data privacy by not persisting any user data beyond the app's session.
 
 ## Files
 ### 🔬 Lab_Insight.py
@@ -26,8 +38,21 @@ This Jupyter Notebook contains the code for creating the Chroma Vector Database 
 ### 📋 requirements.txt
 This file lists the necessary libraries and dependencies required to run the Lab Insight App. Ensure you install these libraries before running the application.
 
-## Getting Started
-- Install the required libraries by running " pip install -r requirements.txt ".
-- Run the main script "🔬_Lab_Insight.py" to start the Lab Insight App.
+## Instructions
+### Prerequisites
+Ensure you have Python installed on your machine.
 
-Happy analyzing! 🩸📊
+### Setup
+Clone this repository:
+``` git clone https://github.com/your-username/lab-insight-app.git ```
+
+Navigate to the project directory:
+``` cd lab-insight-app ```
+
+Install the required libraries:
+``` pip install -r requirements.txt ```
+
+### Running the App
+Run the main script:
+
+``` python 🔬_Lab_Insight.py ``` 
