@@ -1,8 +1,8 @@
-langchain==0.0.350
-pandas==1.5.3
+langchain
+pandas
 streamlit
 openai
-chromadb==0.3.29
+chromadb
 tiktoken
 fpdf
 faiss-cpu
